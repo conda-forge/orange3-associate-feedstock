@@ -17,10 +17,10 @@ requirements:
   build:
     - {{ compiler('cxx') }}
   host:
-    - python
+    - python >=3.9
     - pip
   run:
-    - python
+    - python >=3.9
     - numpy
     - scipy
     - Orange3 >=3.25.0
