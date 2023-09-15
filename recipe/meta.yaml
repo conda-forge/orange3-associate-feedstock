@@ -1,5 +1,5 @@
 {% set name = "Orange3-Associate" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 877ca1dc81a892cb98898598ea7becbf9b780ebc2f0800a54e376fcb2f4acca1
+  sha256: 566585849dd83d1f3dd1a84ea99bf69af4390dbaf25381fdfc6a62fa41af2c8a
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
+  skip: True  # [py<39]
 
 requirements:
   build:
