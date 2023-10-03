@@ -24,7 +24,7 @@ requirements:
     - python
     - numpy
     - scipy
-    - Orange3 >=3.25.0
+    - Orange3 >=3.33.0
 
 test:
   imports:
