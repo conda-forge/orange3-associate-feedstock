@@ -10,13 +10,14 @@ source:
   sha256: cfe2fd750545242b43b577c35dc8939820647d7043853c883bd297222df1d89d
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [py<39]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
