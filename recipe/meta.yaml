@@ -21,11 +21,12 @@ requirements:
   host:
     - python
     - pip
+    - cython
   run:
     - python
-    - numpy
-    - scipy
-    - Orange3 >=3.33.0
+    - numpy >=1.24.0
+    - scipy >=1.10.0
+    - Orange3 >=3.38.0
 
 test:
   imports:
